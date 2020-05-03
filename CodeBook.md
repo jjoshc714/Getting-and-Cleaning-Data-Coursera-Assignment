@@ -31,7 +31,7 @@
 Variable Name | Column # | Class | Description
 --------------|----------|-------|------------
 
-subject | 1               
+subject | 1 | integer | subject #      
 activity | 2              
 tBodyAccelmeanX | 3              
 tBodyAccelmeanY | 4           
