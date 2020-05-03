@@ -12,19 +12,19 @@
 *More info provided in the README.txt file contained in UCI HAR Dataset*
 
 ### Data Cleaning Process:
-* The 3 txt files are read for the training set from the "train" folder within the "UCI HAR Dataset" directory and are in this order: subject_train.txt, y_train.txt, X_train.txt. These are renamed subjects_train, activities_train, and xdata_train respectively and column binded into comb_train. 
+* The 3 txt files are read for the training set from the "train" folder within the "UCI HAR Dataset" directory and are in this order: subject_train.txt, y_train.txt, X_train.txt. These are renamed `subjects_train`, `activities_train`, and `xdata_train` respectively and column binded into `comb_train`. 
 
-* Same steps for the testing set to get subjects_test, activities_test, and xdata_test resulting in comb_test. Finally comb_train and comb_test are row binded to create train_test.
+* Same steps for the testing set to get `subjects_test`, `activities_test`, and `xdata_test` resulting in `comb_test`. Finally `comb_train` and `comb_test` are row binded to create `train_test`.
 
-* The first two variables are renamed "subject" and "activity" while the remaining variables are named corresponding to feature_names which reads the features.txt file.
+* The first two variables are renamed "subject" and "activity" while the remaining variables are named corresponding to `feature_names` which reads the features.txt file.
 
-* train_test is arranged first for "subject" then for "activity"
+* `train_test` is arranged first for "subject" then for "activity"
 
-* activity_labels is created from activity_labels.txt and used to replace the activity numerics with descriptive factors: 1. Walking, 2. Walking Upstairs, 3. Walking Downstairs, 4. Sitting, 5. Standing, 6. Laying
+* `activity_labels` is created from activity_labels.txt and used to replace the activity numerics with descriptive factors: 1. Walking, 2. Walking Upstairs, 3. Walking Downstairs, 4. Sitting, 5. Standing, 6. Laying
 
-* train_test is subsetted to only include the "subject", "activity", "mean()", and "std()" variables per the assignment instructions resulting in mean_std.
+* `train_test` is subsetted to only include the "subject", "activity", "mean()", and "std()" variables per the assignment instructions resulting in `mean_std`.
 
-* mean_std is further cleaned and used to create a tidy dataset (named "tidy" in R script) contained in this repository as "tidydata.txt" which provides the average (mean) of each variable for every combination of subject and activity. 
+* `mean_std` is further cleaned and used to create a tidy dataset (`tidy`) contained in this repository as "tidydata.txt" which provides the average (mean) of each variable for every combination of subject and activity. 
 Example: first row of tidydata.txt provides average values of measurements for subject 1 for Walking, second row provides average values for subject 1 for Walking Upstairs etc
 
 ### Variables in tidydata.txt:
