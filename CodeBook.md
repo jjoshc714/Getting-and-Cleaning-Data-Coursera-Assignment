@@ -30,7 +30,6 @@
 
 Variable Name | Column # | Class | Description
 --------------|----------|-------|------------
-
 | subject | 1 | integer | subject # |     
 activity | 2              
 tBodyAccelmeanX | 3              
