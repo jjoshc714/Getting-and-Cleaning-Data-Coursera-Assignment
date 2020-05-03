@@ -24,7 +24,8 @@
 
 * train_test is subsetted to only include the "subject", "activity", "mean()", and "std()" variables per the assignment instructions resulting in mean_std.
 
-* mean_std is further cleaned and used to create a tidy dataset (named "tidy" in R script) contained in this repository as "tidydata.txt" which provides the average (mean) of each variable for every combination of subject and activity. Example: first row of tidydata.txt provides average values of measurements for subject 1 for Walking, second row provides average values for subject 1 for Walking Upstairs etc
+* mean_std is further cleaned and used to create a tidy dataset (named "tidy" in R script) contained in this repository as "tidydata.txt" which provides the average (mean) of each variable for every combination of subject and activity. 
+Example: first row of tidydata.txt provides average values of measurements for subject 1 for Walking, second row provides average values for subject 1 for Walking Upstairs etc
 
 ### Variables in tidydata.txt:
 
