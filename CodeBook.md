@@ -26,90 +26,90 @@
 
 * mean_std is further cleaned and used to create a tidy dataset (named "tidy" in R script) contained in this repository as "tidydata.txt" which provides the average (mean) of each variable for every combination of subject and activity. EX: first row of tidydata.txt provides average values of measurements for subject 1 for Walking. second row provides average values for subject 1 for Walking Upstairs. etc
 
-### Variables in tidydata.txt
+### Variables in tidydata.txt:
 
 Variable Name | Column # | Class | Description
 --------------|----------|-------|------------
-| subject | 1 | integer | subject # |     
-activity | 2              
-tBodyAccelmeanX | 3              
-tBodyAccelmeanY | 4           
-tBodyAccelmeanZ | 5           
-tBodyAccelstdX | 6          
-tBodyAccelstdY | 7               
-tBodyAccelstdZ |8               
-tGravityAccelmeanX | 9          
-tGravityAccelmeanY | 10            
-tGravityAccelmeanZ | 11            
-tGravityAccelstdX | 12            
-tGravityAccelstdY | 13             
-tGravityAccelstdZ | 14             
-tBodyAccelJerkmeanX | 15          
-tBodyAccelJerkmeanY | 16          
-tBodyAccelJerkmeanZ | 17       
-tBodyAccelJerkstdX | 18         
-tBodyAccelJerkstdY | 19       
-tBodyAccelJerkstdZ | 20       
-tBodyGyromeanX | 21      
-tBodyGyromeanY | 22           
-tBodyGyromeanZ | 23           
-tBodyGyrostdX | 24          
-tBodyGyrostdY | 25            
-tBodyGyrostdZ | 26                 
-tBodyGyroJerkmeanX | 27           
-tBodyGyroJerkmeanY | 28          
-tBodyGyroJerkmeanZ | 29          
-tBodyGyroJerkstdX | 30            
-tBodyGyroJerkstdY | 31            
-tBodyGyroJerkstdZ | 32           
-tBodyAccelMagmean | 33            
-tBodyAccelMagstd | 34              
-tGravityAccelMagmean | 35          
-tGravityAccelMagstd | 36         
-tBodyAccelJerkMagmean | 37         
-tBodyAccelJerkMagstd | 38          
-tBodyGyroMagmean | 39             
-tBodyGyroMagstd | 40               
-tBodyGyroJerkMagmean | 41          
-tBodyGyroJerkMagstd | 42          
-fBodyAccelmeanX | 43              
-fBodyAccelmeanY | 44              
-fBodyAccelmeanZ | 45             
-fBodyAccelstdX | 46                
-fBodyAccelstdY | 47                
-fBodyAccelstdZ | 48              
-fBodyAccelmeanFreqX | 49           
-fBodyAccelmeanFreqY | 50         
-fBodyAccelmeanFreqZ | 51         
-fBodyAccelJerkmeanX | 52          
-fBodyAccelJerkmeanY | 53          
-fBodyAccelJerkmeanZ | 54         
-fBodyAccelJerkstdX | 55          
-fBodyAccelJerkstdY | 56            
-fBodyAccelJerkstdZ | 57           
-fBodyAccelJerkmeanFreqX | 58       
-fBodyAccelJerkmeanFreqY | 59     
-fBodyAccelJerkmeanFreqZ | 60      
-fBodyGyromeanX | 61     
-fBodyGyromeanY | 62               
-fBodyGyromeanZ | 63              
-fBodyGyrostdX | 64                 
-fBodyGyrostdY | 65                
-fBodyGyrostdZ | 66               
-fBodyGyromeanFreqX | 67            
-fBodyGyromeanFreqY | 68            
-fBodyGyromeanFreqZ | 69           
-fBodyAccelMagmean | 70             
-fBodyAccelMagstd | 71              
-fBodyAccelMagmeanFreq | 72        
-fBodyBodyAccelJerkMagmean | 73   
-fBodyBodyAccelJerkMagstd | 74      
-fBodyBodyAccelJerkMagmeanFreq | 75
-fBodyBodyGyroMagmean | 76          
-fBodyBodyGyroMagstd | 77           
-fBodyBodyGyroMagmeanFreq | 78     
-fBodyBodyGyroJerkMagmean | 79      
-fBodyBodyGyroJerkMagstd | 80       
-fBodyBodyGyroJerkMagmeanFreq | 90 
+subject | 1 | integer | subject #     
+activity | 2 | factor | activity type           
+tBodyAccelmeanX | 3 | numeric | sensory measurement
+tBodyAccelmeanY | 4 | numeric | sensory measurement           
+tBodyAccelmeanZ | 5 | numeric | sensory measurement           
+tBodyAccelstdX | 6 | numeric | sensory measurement          
+tBodyAccelstdY | 7 | numeric | sensory measurement               
+tBodyAccelstdZ |8 | numeric | sensory measurement               
+tGravityAccelmeanX | 9 | numeric | sensory measurement          
+tGravityAccelmeanY | 10 | numeric | sensory measurement            
+tGravityAccelmeanZ | 11 | numeric | sensory measurement            
+tGravityAccelstdX | 12 | numeric | sensory measurement            
+tGravityAccelstdY | 13 | numeric | sensory measurement             
+tGravityAccelstdZ | 14 | numeric | sensory measurement             
+tBodyAccelJerkmeanX | 15 | numeric | sensory measurement          
+tBodyAccelJerkmeanY | 16 | numeric | sensory measurement          
+tBodyAccelJerkmeanZ | 17 | numeric | sensory measurement       
+tBodyAccelJerkstdX | 18 | numeric | sensory measurement         
+tBodyAccelJerkstdY | 19 | numeric | sensory measurement       
+tBodyAccelJerkstdZ | 20 | numeric | sensory measurement       
+tBodyGyromeanX | 21 | numeric | sensory measurement      
+tBodyGyromeanY | 22 | numeric | sensory measurement           
+tBodyGyromeanZ | 23 | numeric | sensory measurement           
+tBodyGyrostdX | 24 | numeric | sensory measurement          
+tBodyGyrostdY | 25 | numeric | sensory measurement            
+tBodyGyrostdZ | 26 | numeric | sensory measurement                 
+tBodyGyroJerkmeanX | 27 | numeric | sensory measurement           
+tBodyGyroJerkmeanY | 28 | numeric | sensory measurement          
+tBodyGyroJerkmeanZ | 29 | numeric | sensory measurement          
+tBodyGyroJerkstdX | 30 | numeric | sensory measurement            
+tBodyGyroJerkstdY | 31 | numeric | sensory measurement            
+tBodyGyroJerkstdZ | 32 | numeric | sensory measurement           
+tBodyAccelMagmean | 33 | numeric | sensory measurement            
+tBodyAccelMagstd | 34 | numeric | sensory measurement              
+tGravityAccelMagmean | 35 | numeric | sensory measurement          
+tGravityAccelMagstd | 36 | numeric | sensory measurement         
+tBodyAccelJerkMagmean | 37 | numeric | sensory measurement         
+tBodyAccelJerkMagstd | 38 | numeric | sensory measurement          
+tBodyGyroMagmean | 39 | numeric | sensory measurement             
+tBodyGyroMagstd | 40 | numeric | sensory measurement               
+tBodyGyroJerkMagmean | 41 | numeric | sensory measurement          
+tBodyGyroJerkMagstd | 42 | numeric | sensory measurement          
+fBodyAccelmeanX | 43 | numeric | sensory measurement              
+fBodyAccelmeanY | 44 | numeric | sensory measurement              
+fBodyAccelmeanZ | 45 | numeric | sensory measurement             
+fBodyAccelstdX | 46 | numeric | sensory measurement                
+fBodyAccelstdY | 47 | numeric | sensory measurement                
+fBodyAccelstdZ | 48 | numeric | sensory measurement              
+fBodyAccelmeanFreqX | 49 | numeric | sensory measurement           
+fBodyAccelmeanFreqY | 50 | numeric | sensory measurement         
+fBodyAccelmeanFreqZ | 51 | numeric | sensory measurement         
+fBodyAccelJerkmeanX | 52 | numeric | sensory measurement          
+fBodyAccelJerkmeanY | 53 | numeric | sensory measurement          
+fBodyAccelJerkmeanZ | 54 | numeric | sensory measurement         
+fBodyAccelJerkstdX | 55 | numeric | sensory measurement          
+fBodyAccelJerkstdY | 56 | numeric | sensory measurement            
+fBodyAccelJerkstdZ | 57 | numeric | sensory measurement           
+fBodyAccelJerkmeanFreqX | 58 | numeric | sensory measurement       
+fBodyAccelJerkmeanFreqY | 59 | numeric | sensory measurement     
+fBodyAccelJerkmeanFreqZ | 60 | numeric | sensory measurement      
+fBodyGyromeanX | 61 | numeric | sensory measurement     
+fBodyGyromeanY | 62 | numeric | sensory measurement               
+fBodyGyromeanZ | 63 | numeric | sensory measurement              
+fBodyGyrostdX | 64 | numeric | sensory measurement                 
+fBodyGyrostdY | 65 | numeric | sensory measurement                
+fBodyGyrostdZ | 66 | numeric | sensory measurement               
+fBodyGyromeanFreqX | 67 | numeric | sensory measurement            
+fBodyGyromeanFreqY | 68 | numeric | sensory measurement            
+fBodyGyromeanFreqZ | 69 | numeric | sensory measurement           
+fBodyAccelMagmean | 70 | numeric | sensory measurement             
+fBodyAccelMagstd | 71 | numeric | sensory measurement              
+fBodyAccelMagmeanFreq | 72 | numeric | sensory measurement        
+fBodyBodyAccelJerkMagmean | 73 | numeric | sensory measurement   
+fBodyBodyAccelJerkMagstd | 74 | numeric | sensory measurement      
+fBodyBodyAccelJerkMagmeanFreq | 75 | numeric | sensory measurement
+fBodyBodyGyroMagmean | 76 | numeric | sensory measurement          
+fBodyBodyGyroMagstd | 77 | numeric | sensory measurement           
+fBodyBodyGyroMagmeanFreq | 78 | numeric | sensory measurement     
+fBodyBodyGyroJerkMagmean | 79 | numeric | sensory measurement      
+fBodyBodyGyroJerkMagstd | 80 | numeric | sensory measurement       
+fBodyBodyGyroJerkMagmeanFreq | 90 | numeric | sensory measurement 
 
 
