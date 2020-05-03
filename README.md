@@ -9,7 +9,7 @@ The data consists of sensory recordings using the accelerometer and gyroscope of
 *"The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain."* 
 
 ### Goals:
-1. Use the training and testing sets of the data to form a single clean dataset which is labeled appropriately and informatively for the "activity" column as well as the other variable names.
+1. Use the training and testing sets of the data to form a single clean dataset which is labeled appropriately and informatively for the "activity" column as well as the other variable names. This data should be subsetted to only include the subject, activity, mean measurement, and standard deviation measurement variables.
 
 2. Create a tidy dataset which contains the average values for all variables for every subject and activity. This will be saved as a txt file: "tidydata.txt"
 
