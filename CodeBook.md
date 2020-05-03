@@ -111,6 +111,6 @@ fBodyBodyGyroMagstd | 77 | numeric | sensory measurement
 fBodyBodyGyroMagmeanFreq | 78 | numeric | sensory measurement     
 fBodyBodyGyroJerkMagmean | 79 | numeric | sensory measurement      
 fBodyBodyGyroJerkMagstd | 80 | numeric | sensory measurement       
-fBodyBodyGyroJerkMagmeanFreq | 90 | numeric | sensory measurement 
+fBodyBodyGyroJerkMagmeanFreq | 81 | numeric | sensory measurement 
 
 
